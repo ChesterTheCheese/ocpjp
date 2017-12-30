@@ -27,7 +27,6 @@ public class Question3 {
             System.out.print("1 ");
             throw new IOException();
         }
-
     }
 
     static class MyResource2 implements AutoCloseable {
