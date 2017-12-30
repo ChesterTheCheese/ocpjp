@@ -6,16 +6,13 @@ import java.io.IOException;
 public class Question3 {
 
     public static void main(String[] args){
-
         System.out.println("Question3.main");
-
-
     }
 
     static class MyResource1 implements Closeable {
         public void close() throws IOException {
-            System.out.print("1 ");
-//            throw new IOException();
+            System.out.print("1");
+            throw new IOException();
         }
     }
     static class MyResource2 implements AutoCloseable {
